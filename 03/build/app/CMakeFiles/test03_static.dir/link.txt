@@ -1,2 +1,0 @@
-/usr/bin/ar qc libtest03_static.a  CMakeFiles/test03_static.dir/hello.c.o
-/usr/bin/ranlib libtest03_static.a

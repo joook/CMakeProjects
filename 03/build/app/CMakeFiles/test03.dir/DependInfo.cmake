@@ -4,13 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/nrjza/CMakeProjects/03/src/app/hello.c" "/home/nrjza/CMakeProjects/03/build/app/CMakeFiles/test03_shared.dir/hello.c.o"
+  "/home/nrjza/CMakeProjects/03/src/app/hello.c" "/home/nrjza/CMakeProjects/03/build/app/CMakeFiles/test03.dir/hello.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_C
-  "test03_shared_EXPORTS"
+  "test03_EXPORTS"
   )
 
 # The include file search paths:

@@ -120,6 +120,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "app/CMakeFiles/test03_shared.dir/DependInfo.cmake"
-  "app/CMakeFiles/test03_static.dir/DependInfo.cmake"
+  "app/CMakeFiles/test03.dir/DependInfo.cmake"
   )

@@ -157,30 +157,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named test03_shared
+# Target rules for targets named test03
 
 # Build rule for target.
-test03_shared: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test03_shared
-.PHONY : test03_shared
+test03: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test03
+.PHONY : test03
 
 # fast build rule for target.
-test03_shared/fast:
-	$(MAKE) -f app/CMakeFiles/test03_shared.dir/build.make app/CMakeFiles/test03_shared.dir/build
-.PHONY : test03_shared/fast
-
-#=============================================================================
-# Target rules for targets named test03_static
-
-# Build rule for target.
-test03_static: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test03_static
-.PHONY : test03_static
-
-# fast build rule for target.
-test03_static/fast:
-	$(MAKE) -f app/CMakeFiles/test03_static.dir/build.make app/CMakeFiles/test03_static.dir/build
-.PHONY : test03_static/fast
+test03/fast:
+	$(MAKE) -f app/CMakeFiles/test03.dir/build.make app/CMakeFiles/test03.dir/build
+.PHONY : test03/fast
 
 # Help Target
 help:
@@ -194,8 +181,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... test03_shared"
-	@echo "... test03_static"
+	@echo "... test03"
 .PHONY : help
 
 

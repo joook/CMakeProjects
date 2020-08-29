@@ -56,30 +56,6 @@ CMAKE_BINARY_DIR = /home/nrjza/CMakeProjects/03/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -124,6 +100,30 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/local/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/local/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/local/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/local/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
 # The main all target
 all: cmake_check_build_system
 	cd /home/nrjza/CMakeProjects/03/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/nrjza/CMakeProjects/03/build/CMakeFiles /home/nrjza/CMakeProjects/03/build/app/CMakeFiles/progress.marks
@@ -157,34 +157,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-app/CMakeFiles/test03_shared.dir/rule:
-	cd /home/nrjza/CMakeProjects/03/build && $(MAKE) -f CMakeFiles/Makefile2 app/CMakeFiles/test03_shared.dir/rule
-.PHONY : app/CMakeFiles/test03_shared.dir/rule
+app/CMakeFiles/test03.dir/rule:
+	cd /home/nrjza/CMakeProjects/03/build && $(MAKE) -f CMakeFiles/Makefile2 app/CMakeFiles/test03.dir/rule
+.PHONY : app/CMakeFiles/test03.dir/rule
 
 # Convenience name for target.
-test03_shared: app/CMakeFiles/test03_shared.dir/rule
+test03: app/CMakeFiles/test03.dir/rule
 
-.PHONY : test03_shared
+.PHONY : test03
 
 # fast build rule for target.
-test03_shared/fast:
-	cd /home/nrjza/CMakeProjects/03/build && $(MAKE) -f app/CMakeFiles/test03_shared.dir/build.make app/CMakeFiles/test03_shared.dir/build
-.PHONY : test03_shared/fast
-
-# Convenience name for target.
-app/CMakeFiles/test03_static.dir/rule:
-	cd /home/nrjza/CMakeProjects/03/build && $(MAKE) -f CMakeFiles/Makefile2 app/CMakeFiles/test03_static.dir/rule
-.PHONY : app/CMakeFiles/test03_static.dir/rule
-
-# Convenience name for target.
-test03_static: app/CMakeFiles/test03_static.dir/rule
-
-.PHONY : test03_static
-
-# fast build rule for target.
-test03_static/fast:
-	cd /home/nrjza/CMakeProjects/03/build && $(MAKE) -f app/CMakeFiles/test03_static.dir/build.make app/CMakeFiles/test03_static.dir/build
-.PHONY : test03_static/fast
+test03/fast:
+	cd /home/nrjza/CMakeProjects/03/build && $(MAKE) -f app/CMakeFiles/test03.dir/build.make app/CMakeFiles/test03.dir/build
+.PHONY : test03/fast
 
 hello.o: hello.c.o
 
@@ -192,8 +177,7 @@ hello.o: hello.c.o
 
 # target to build an object file
 hello.c.o:
-	cd /home/nrjza/CMakeProjects/03/build && $(MAKE) -f app/CMakeFiles/test03_shared.dir/build.make app/CMakeFiles/test03_shared.dir/hello.c.o
-	cd /home/nrjza/CMakeProjects/03/build && $(MAKE) -f app/CMakeFiles/test03_static.dir/build.make app/CMakeFiles/test03_static.dir/hello.c.o
+	cd /home/nrjza/CMakeProjects/03/build && $(MAKE) -f app/CMakeFiles/test03.dir/build.make app/CMakeFiles/test03.dir/hello.c.o
 .PHONY : hello.c.o
 
 hello.i: hello.c.i
@@ -202,8 +186,7 @@ hello.i: hello.c.i
 
 # target to preprocess a source file
 hello.c.i:
-	cd /home/nrjza/CMakeProjects/03/build && $(MAKE) -f app/CMakeFiles/test03_shared.dir/build.make app/CMakeFiles/test03_shared.dir/hello.c.i
-	cd /home/nrjza/CMakeProjects/03/build && $(MAKE) -f app/CMakeFiles/test03_static.dir/build.make app/CMakeFiles/test03_static.dir/hello.c.i
+	cd /home/nrjza/CMakeProjects/03/build && $(MAKE) -f app/CMakeFiles/test03.dir/build.make app/CMakeFiles/test03.dir/hello.c.i
 .PHONY : hello.c.i
 
 hello.s: hello.c.s
@@ -212,8 +195,7 @@ hello.s: hello.c.s
 
 # target to generate assembly for a file
 hello.c.s:
-	cd /home/nrjza/CMakeProjects/03/build && $(MAKE) -f app/CMakeFiles/test03_shared.dir/build.make app/CMakeFiles/test03_shared.dir/hello.c.s
-	cd /home/nrjza/CMakeProjects/03/build && $(MAKE) -f app/CMakeFiles/test03_static.dir/build.make app/CMakeFiles/test03_static.dir/hello.c.s
+	cd /home/nrjza/CMakeProjects/03/build && $(MAKE) -f app/CMakeFiles/test03.dir/build.make app/CMakeFiles/test03.dir/hello.c.s
 .PHONY : hello.c.s
 
 # Help Target
@@ -222,14 +204,13 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install/strip"
-	@echo "... install/local"
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... test03_shared"
-	@echo "... test03_static"
+	@echo "... install/strip"
+	@echo "... install/local"
+	@echo "... test03"
 	@echo "... hello.o"
 	@echo "... hello.i"
 	@echo "... hello.s"

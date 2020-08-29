@@ -1,3 +1,2 @@
-/home/nrjza/CMakeProjects/03/build/./lib/libtest03_static.a
-/home/nrjza/CMakeProjects/03/build/./lib/libtest03_shared.so
+/home/nrjza/CMakeProjects/03/build/./lib/libtest03.so
 /home/nrjza/CMakeProjects/03/build/./include/hello.h

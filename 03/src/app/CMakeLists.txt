@@ -2,15 +2,15 @@ SET(LIBSRC_LIST
     hello.c
     )
 
-add_library(test03_static STATIC ${LIBSRC_LIST})
-add_library(test03_shared SHARED ${LIBSRC_LIST})
+#add_library(test03 STATIC ${LIBSRC_LIST})
+add_library(test03 SHARED ${LIBSRC_LIST})
 
 #set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
 #set(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)
 
-install(TARGETS test03_static test03_shared
+install(TARGETS test03
 #    RUNTIME DESTINATION bin
-    ARCHIVE DESTINATION lib
+#    ARCHIVE DESTINATION lib
     LIBRARY DESTINATION lib
     )
 
