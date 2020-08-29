@@ -1,0 +1,1 @@
+/home/nrjza/CMakeProjects/04/build/./bin/test04

@@ -1,0 +1,13 @@
+/home/nrjza/CMakeProjects/04/build/CMakeFiles/install/strip.dir
+/home/nrjza/CMakeProjects/04/build/CMakeFiles/install/local.dir
+/home/nrjza/CMakeProjects/04/build/CMakeFiles/install.dir
+/home/nrjza/CMakeProjects/04/build/CMakeFiles/list_install_components.dir
+/home/nrjza/CMakeProjects/04/build/CMakeFiles/rebuild_cache.dir
+/home/nrjza/CMakeProjects/04/build/CMakeFiles/edit_cache.dir
+/home/nrjza/CMakeProjects/04/build/app/CMakeFiles/install/strip.dir
+/home/nrjza/CMakeProjects/04/build/app/CMakeFiles/install/local.dir
+/home/nrjza/CMakeProjects/04/build/app/CMakeFiles/install.dir
+/home/nrjza/CMakeProjects/04/build/app/CMakeFiles/list_install_components.dir
+/home/nrjza/CMakeProjects/04/build/app/CMakeFiles/rebuild_cache.dir
+/home/nrjza/CMakeProjects/04/build/app/CMakeFiles/edit_cache.dir
+/home/nrjza/CMakeProjects/04/build/app/CMakeFiles/test04.dir

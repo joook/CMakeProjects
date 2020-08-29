@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC   -shared -Wl,-soname,libtest03_shared.so -o libtest03_shared.so CMakeFiles/test03_shared.dir/hello.c.o 

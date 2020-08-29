@@ -1,0 +1,2 @@
+/home/nrjza/CMakeProjects/02/src-build/bin/test02
+/home/nrjza/CMakeProjects/02/src-build/doc/README.txt

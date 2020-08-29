@@ -1,0 +1,3 @@
+/home/nrjza/CMakeProjects/01/build/CMakeFiles/rebuild_cache.dir
+/home/nrjza/CMakeProjects/01/build/CMakeFiles/edit_cache.dir
+/home/nrjza/CMakeProjects/01/build/CMakeFiles/test01.dir

@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/test04.dir/main.c.o  -o test04  -L/home/nrjza/CMakeProjects/03/build/lib -Wl,-rpath,/home/nrjza/CMakeProjects/03/build/lib: -ltest03_static 
