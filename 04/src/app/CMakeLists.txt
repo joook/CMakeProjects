@@ -11,7 +11,7 @@ link_directories("/home/nrjza/CMakeProjects/03/build/lib")
 add_executable(test04 ${SRC_LIST})
 
 target_link_libraries(test04
-    test03_static
+    test03
     )
 
 #set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
@@ -20,4 +20,8 @@ target_link_libraries(test04
 install(TARGETS test04
     RUNTIME DESTINATION bin
 #    LIBRARY DESTINATION lib
+    )
+
+install(PROGRAMS start-test04.sh
+    DESTINATION bin
     )
