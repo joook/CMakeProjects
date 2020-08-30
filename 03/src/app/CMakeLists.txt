@@ -1,5 +1,5 @@
 SET(LIBSRC_LIST
-    hello.c
+    test03.c
     )
 
 #add_library(test03 STATIC ${LIBSRC_LIST})
@@ -14,6 +14,6 @@ install(TARGETS test03
     LIBRARY DESTINATION lib
     )
 
-install(FILES hello.h
+install(FILES test03.h
     DESTINATION include
     )

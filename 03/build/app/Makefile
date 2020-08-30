@@ -171,32 +171,32 @@ test03/fast:
 	cd /home/nrjza/CMakeProjects/03/build && $(MAKE) -f app/CMakeFiles/test03.dir/build.make app/CMakeFiles/test03.dir/build
 .PHONY : test03/fast
 
-hello.o: hello.c.o
+test03.o: test03.c.o
 
-.PHONY : hello.o
+.PHONY : test03.o
 
 # target to build an object file
-hello.c.o:
-	cd /home/nrjza/CMakeProjects/03/build && $(MAKE) -f app/CMakeFiles/test03.dir/build.make app/CMakeFiles/test03.dir/hello.c.o
-.PHONY : hello.c.o
+test03.c.o:
+	cd /home/nrjza/CMakeProjects/03/build && $(MAKE) -f app/CMakeFiles/test03.dir/build.make app/CMakeFiles/test03.dir/test03.c.o
+.PHONY : test03.c.o
 
-hello.i: hello.c.i
+test03.i: test03.c.i
 
-.PHONY : hello.i
+.PHONY : test03.i
 
 # target to preprocess a source file
-hello.c.i:
-	cd /home/nrjza/CMakeProjects/03/build && $(MAKE) -f app/CMakeFiles/test03.dir/build.make app/CMakeFiles/test03.dir/hello.c.i
-.PHONY : hello.c.i
+test03.c.i:
+	cd /home/nrjza/CMakeProjects/03/build && $(MAKE) -f app/CMakeFiles/test03.dir/build.make app/CMakeFiles/test03.dir/test03.c.i
+.PHONY : test03.c.i
 
-hello.s: hello.c.s
+test03.s: test03.c.s
 
-.PHONY : hello.s
+.PHONY : test03.s
 
 # target to generate assembly for a file
-hello.c.s:
-	cd /home/nrjza/CMakeProjects/03/build && $(MAKE) -f app/CMakeFiles/test03.dir/build.make app/CMakeFiles/test03.dir/hello.c.s
-.PHONY : hello.c.s
+test03.c.s:
+	cd /home/nrjza/CMakeProjects/03/build && $(MAKE) -f app/CMakeFiles/test03.dir/build.make app/CMakeFiles/test03.dir/test03.c.s
+.PHONY : test03.c.s
 
 # Help Target
 help:
@@ -211,9 +211,9 @@ help:
 	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... test03"
-	@echo "... hello.o"
-	@echo "... hello.i"
-	@echo "... hello.s"
+	@echo "... test03.o"
+	@echo "... test03.i"
+	@echo "... test03.s"
 .PHONY : help
 
 

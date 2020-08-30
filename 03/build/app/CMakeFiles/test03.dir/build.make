@@ -57,27 +57,27 @@ include app/CMakeFiles/test03.dir/progress.make
 # Include the compile flags for this target's objects.
 include app/CMakeFiles/test03.dir/flags.make
 
-app/CMakeFiles/test03.dir/hello.c.o: app/CMakeFiles/test03.dir/flags.make
-app/CMakeFiles/test03.dir/hello.c.o: /home/nrjza/CMakeProjects/03/src/app/hello.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nrjza/CMakeProjects/03/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object app/CMakeFiles/test03.dir/hello.c.o"
-	cd /home/nrjza/CMakeProjects/03/build/app && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test03.dir/hello.c.o   -c /home/nrjza/CMakeProjects/03/src/app/hello.c
+app/CMakeFiles/test03.dir/test03.c.o: app/CMakeFiles/test03.dir/flags.make
+app/CMakeFiles/test03.dir/test03.c.o: /home/nrjza/CMakeProjects/03/src/app/test03.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nrjza/CMakeProjects/03/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object app/CMakeFiles/test03.dir/test03.c.o"
+	cd /home/nrjza/CMakeProjects/03/build/app && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test03.dir/test03.c.o   -c /home/nrjza/CMakeProjects/03/src/app/test03.c
 
-app/CMakeFiles/test03.dir/hello.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test03.dir/hello.c.i"
-	cd /home/nrjza/CMakeProjects/03/build/app && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nrjza/CMakeProjects/03/src/app/hello.c > CMakeFiles/test03.dir/hello.c.i
+app/CMakeFiles/test03.dir/test03.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test03.dir/test03.c.i"
+	cd /home/nrjza/CMakeProjects/03/build/app && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nrjza/CMakeProjects/03/src/app/test03.c > CMakeFiles/test03.dir/test03.c.i
 
-app/CMakeFiles/test03.dir/hello.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test03.dir/hello.c.s"
-	cd /home/nrjza/CMakeProjects/03/build/app && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nrjza/CMakeProjects/03/src/app/hello.c -o CMakeFiles/test03.dir/hello.c.s
+app/CMakeFiles/test03.dir/test03.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test03.dir/test03.c.s"
+	cd /home/nrjza/CMakeProjects/03/build/app && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nrjza/CMakeProjects/03/src/app/test03.c -o CMakeFiles/test03.dir/test03.c.s
 
 # Object files for target test03
 test03_OBJECTS = \
-"CMakeFiles/test03.dir/hello.c.o"
+"CMakeFiles/test03.dir/test03.c.o"
 
 # External object files for target test03
 test03_EXTERNAL_OBJECTS =
 
-app/libtest03.so: app/CMakeFiles/test03.dir/hello.c.o
+app/libtest03.so: app/CMakeFiles/test03.dir/test03.c.o
 app/libtest03.so: app/CMakeFiles/test03.dir/build.make
 app/libtest03.so: app/CMakeFiles/test03.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nrjza/CMakeProjects/03/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared library libtest03.so"
