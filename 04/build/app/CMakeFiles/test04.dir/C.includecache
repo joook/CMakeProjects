@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/nrjza/CMakeProjects/03/build/include/hello.h
+/home/nrjza/CMakeProjects/03/build/include/test03.h
 stdio.h
 -
 
 /home/nrjza/CMakeProjects/04/src/app/main.c
-hello.h
+test03.h
 -
 
