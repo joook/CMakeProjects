@@ -1,0 +1,2 @@
+/home/nrjza/CMakeProjects/05/build/./bin/test05
+/home/nrjza/CMakeProjects/05/build/./bin/start-test05.sh

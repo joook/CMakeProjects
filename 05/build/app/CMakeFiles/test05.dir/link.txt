@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/test05.dir/main.c.o  -o test05 -Wl,-rpath,/home/nrjza/CMakeProjects/03/build/lib: /home/nrjza/CMakeProjects/03/build/lib/libtest03.so 
