@@ -2,11 +2,11 @@ message(STATUS "FindTEST03.cmake working...")
 
 find_path(TEST03_INCLUDE_DIR
     NAMES test03.h
-    PATHS "/home/nrjza/CMakeProjects/03/build/include")
+    PATHS include)
 
 find_library(TEST03_LIBRARY
     NAMES test03
-    PATHS "/home/nrjza/CMakeProjects/03/build/lib")
+    PATHS lib)
 
 #MESSAGE(STATUS "TEST03_INCLUDE_DIR: ${TEST03_INCLUDE_DIR}")
 #MESSAGE(STATUS "TEST03_LIBRARY: ${TEST03_LIBRARY}")
